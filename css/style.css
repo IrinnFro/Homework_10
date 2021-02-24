@@ -1,0 +1,551 @@
+/* подключаем шрифты F1*/
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Bold.woff2") format("woff2"),
+    url("../fonts/Gilroy-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Medium.woff2") format("woff2"),
+    url("../fonts/Gilroy-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Regular.woff2") format("woff2"),
+    url("../fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* Стили обнуления */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+li {
+  /*убираем точки*/
+  list-style: none;
+}
+a, /* убираем у ссылок предустановки*/
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+h1,/*убираем стили у заголовков*/
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+img {
+  /* Убираем фантомный отступ от картинки */
+  vertical-align: top;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+body {
+  line-height: 1;
+  color: #000;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+/*---------------------------------------------------------------------*/
+body {
+  background: #111428;
+}
+.wrapper {
+  position: relative;
+  max-width: 1920px;
+  /* background: #111428; */
+}
+.text {
+  position: absolute;
+  width: 441px;
+  height: 46px;
+  left: 740px;
+  top: 163px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 46px;
+  color: #ffffff;
+}
+.text_2 {
+  position: absolute;
+  width: 385px;
+  height: 19px;
+  left: 768px;
+  top: 219px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #64b369;
+}
+
+.input {
+  position: absolute;
+  width: 384px;
+  height: 50px;
+  left: 768px;
+  top: 324px;
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+.form__label {
+  display: block;
+  position: absolute;
+  width: 59px;
+  height: 21px;
+  left: 788px;
+  top: 292px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #777777;
+}
+
+.form__button {
+  position: absolute;
+  width: 384px;
+  height: 50px;
+  left: 768px;
+  top: 409px;
+  background: #337ab7;
+  border-radius: 5px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ffffff;
+}
+
+.text_3 {
+  position: absolute;
+  width: 311px;
+  height: 38px;
+  left: 768px;
+  top: 481px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #aeaeae;
+}
+
+.text_4 {
+  position: absolute;
+  width: 171px;
+  height: 21px;
+  left: 815px;
+  top: 549px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.text_5 {
+  position: absolute;
+  width: 109px;
+  height: 21px;
+  left: 996px;
+  top: 549px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #64b369;
+}
+
+.line {
+  position: absolute;
+  width: 1216px;
+  height: 1px;
+  left: 352px;
+  top: 631px;
+  background: #ffffff;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.text_6 {
+  position: absolute;
+  width: 86px;
+  height: 46px;
+  left: 917px;
+  top: 650px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 46px;
+  color: #ffffff;
+}
+
+.input2 {
+  position: absolute;
+  width: 384px;
+  height: 50px;
+  left: 768px;
+  top: 750px;
+  background: #ffffff;
+  border-radius: 5px;
+  position: absolute;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #777777;
+  padding: 13px 20px;
+}
+
+.input3 {
+  position: absolute;
+  width: 384px;
+  height: 50px;
+  left: 768px;
+  top: 830px;
+  background: #ffffff;
+  border-radius: 5px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #777777;
+  padding: 13px 20px;
+}
+.checkbox__input {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 767px;
+  top: 913px;
+  background: #ffffff;
+  border-radius: 5px;
+}
+.checkbox__label {
+  position: absolute;
+  width: 137px;
+  height: 21px;
+  left: 800px;
+  top: 913px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+.text_7 {
+  position: absolute;
+  width: 141px;
+  height: 21px;
+  left: 1011px;
+  top: 913px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #64b369;
+}
+
+.form__button2 {
+  position: absolute;
+  width: 384px;
+  height: 50px;
+  left: 768px;
+  top: 961px;
+  background: #337ab7;
+  border-radius: 5px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ffffff;
+}
+.text_8 {
+  position: absolute;
+  width: 171px;
+  height: 21px;
+  left: 815px;
+  top: 1052px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.text_9 {
+  position: absolute;
+  width: 109px;
+  height: 21px;
+  left: 996px;
+  top: 1052px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #64b369;
+}
+
+.line2 {
+  position: absolute;
+  width: 1216px;
+  height: 1px;
+  left: 352px;
+  top: 1131px;
+  background: #ffffff;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.text_10 {
+  position: absolute;
+  width: 231px;
+  height: 46px;
+  left: 844px;
+  top: 1163px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 46px;
+  color: #ffffff;
+}
+
+.input5 {
+  position: absolute;
+  width: 384px;
+  height: 50px;
+  left: 768px;
+  top: 1250px;
+  background: #ffffff;
+  border-radius: 5px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #777777;
+  padding: 13px 20px;
+}
+.input6 {
+  position: absolute;
+  width: 384px;
+  height: 50px;
+  left: 768px;
+  top: 1330px;
+  background: #ffffff;
+  border-radius: 5px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #777777;
+  padding: 13px 20px;
+}
+.input7 {
+  position: absolute;
+  width: 384px;
+  height: 50px;
+  left: 768px;
+  top: 1410px;
+  background: #ffffff;
+  border-radius: 5px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #777777;
+  padding: 13px 20px;
+}
+.input8 {
+  position: absolute;
+  width: 384px;
+  height: 50px;
+  left: 768px;
+  top: 1490px;
+  background: #ffffff;
+  border-radius: 5px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #777777;
+  padding: 13px 20px;
+}
+.input9 {
+  position: absolute;
+  width: 384px;
+  height: 50px;
+  left: 768px;
+  top: 1570px;
+  background: #ffffff;
+  border-radius: 5px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #777777;
+  padding: 13px 20px;
+}
+.input10 {
+  position: absolute;
+  width: 384px;
+  height: 50px;
+  left: 768px;
+  top: 1650px;
+  background: #ffffff;
+  border-radius: 5px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #777777;
+  padding: 13px 20px;
+}
+.option__input11 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 768px;
+  top: 1720px;
+  background: #ffffff;
+  border-radius: 5px;
+}
+.option__label11 {
+  position: absolute;
+  width: 78px;
+  height: 21px;
+  left: 798px;
+  top: 1718px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+.option__input12 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 926px;
+  top: 1720px;
+  background: #ffffff;
+  border-radius: 5px;
+}
+.option__label12 {
+  position: absolute;
+  width: 83px;
+  height: 21px;
+  left: 956px;
+  top: 1718px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+.checkbox__input13 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 768px;
+  top: 1772px;
+  background: #ffffff;
+  border-radius: 5px;
+}
+.checkbox__label13 {
+  position: absolute;
+  width: 109px;
+  height: 21px;
+  left: 798px;
+  top: 1770px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+.text11 {
+  position: absolute;
+  width: 161px;
+  height: 21px;
+  left: 917px;
+  top: 1770px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #64b369;
+}
+.form__button3 {
+  position: absolute;
+  width: 384px;
+  height: 50px;
+  left: 768px;
+  top: 1821px;
+  background: #337ab7;
+  border-radius: 5px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ffffff;
+}
